@@ -31,6 +31,9 @@ RUN opam install lwt
 # NPM -> RELATING TO NEOVIM LSP-SERVERS
 RUN sudo apt-get install npm -y
 
+# MOVING ON FROM BASH
+RUN sudo apt-get install zsh -y
+
 # NEOVIM CONFIGURATION
 RUN git clone https://github.com/chadwpry/dotfiles.git
 RUN cd dotfiles && ./install
